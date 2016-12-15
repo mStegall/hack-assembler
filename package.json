@@ -1,0 +1,15 @@
+{
+  "name": "hack-assembler",
+  "version": "1.0.0",
+  "description": "An assemble for the HACK assembly langue from Nand2Tetris",
+  "main": "index.js",
+  "author": "Matt Stegall",
+  "license": "ISC",
+  "engines": {
+      "node": "^6.9.1"
+  },
+
+  "dependencies": {
+    "nopt": "^4.0.1"
+  }
+}
