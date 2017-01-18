@@ -88,7 +88,8 @@ function removeWhitespace(lines) {
             return prev
         }
         cleanLine = line.split('//')[0].trim();
-        return [...prev, cleanLine]
+        prev.push(cleanLine);
+        return prev;
     }, [])
 }
 
@@ -107,7 +108,8 @@ function extractLabels(lines) {
             }
             throw new Error(`Symbol already exists, ${label} at ${lineNum}`);
         }
-        return [...prev, line];
+        prev.push(line);
+        return prev;
     }, [])
 
     return {
